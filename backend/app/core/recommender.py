@@ -3,10 +3,11 @@
 from __future__ import annotations
 
 from .knowledge_base import get_knowledge_base
-from .matcher import Match
+from .observability import traceable
 
 
-def recommend(category: str | None, matches: list[Match]) -> list[dict]:
+@traceable(run_type="tool", name="recommend_alternatives")
+def recommend(category: str | None) -> list[dict]:
     """Suggest safer products for the given category (if known)."""
     kb = get_knowledge_base()
     if not category or category not in kb.alternatives:

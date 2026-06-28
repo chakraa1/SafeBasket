@@ -69,12 +69,22 @@ class Settings:
         return bool(self.langsmith_api_key)
 
     def configure_langsmith(self) -> None:
-        """Wire up LangSmith env vars so LangChain auto-traces when enabled."""
+        """Wire up LangSmith env vars so the agent traces when enabled.
+
+        Sets both the legacy ``LANGCHAIN_*`` and the newer ``LANGSMITH_*`` env
+        names so that LangChain auto-tracing AND the langsmith ``@traceable``
+        decorator (used for the free, no-LLM tier) both light up from a single
+        API key. No-op when no key is configured.
+        """
         if not self.langsmith_enabled:
             return
+        key = self.langsmith_api_key or ""
         os.environ.setdefault("LANGCHAIN_TRACING_V2", "true")
-        os.environ.setdefault("LANGCHAIN_API_KEY", self.langsmith_api_key or "")
+        os.environ.setdefault("LANGSMITH_TRACING", "true")
+        os.environ.setdefault("LANGCHAIN_API_KEY", key)
+        os.environ.setdefault("LANGSMITH_API_KEY", key)
         os.environ.setdefault("LANGCHAIN_PROJECT", self.langsmith_project)
+        os.environ.setdefault("LANGSMITH_PROJECT", self.langsmith_project)
 
 
 @lru_cache(maxsize=1)

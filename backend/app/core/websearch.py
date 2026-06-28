@@ -8,6 +8,7 @@ present; otherwise returns a clear, honest note that live research is disabled.
 from __future__ import annotations
 
 from ..config import get_settings
+from .observability import traceable
 
 
 def should_research(matches) -> bool:
@@ -15,6 +16,7 @@ def should_research(matches) -> bool:
     return any(m.ingredient.carcinogen or m.ingredient.severity == "high" for m in matches)
 
 
+@traceable(run_type="tool", name="web_research")
 def research(names: list[str]) -> list[str]:
     settings = get_settings()
     if not names:

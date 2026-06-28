@@ -14,6 +14,7 @@ from __future__ import annotations
 
 from .knowledge_base import Product, get_knowledge_base
 from .matcher import Match, match_harmful
+from .observability import traceable
 from .rag import get_rag_index
 from .recommender import recommend
 from .websearch import research, should_research
@@ -91,6 +92,18 @@ def _summary(matches: list[Match], rating: str, carcinogen_count: int) -> str:
     return " ".join(parts)
 
 
+def _trace_summary(result: dict) -> dict:
+    """Compact view of the analysis result for the LangSmith trace."""
+    return {
+        "safety_score": result.get("safety_score"),
+        "rating": result.get("rating"),
+        "carcinogen_count": result.get("carcinogen_count"),
+        "flagged": [f["name"] for f in result.get("flagged", [])],
+        "engine": result.get("engine"),
+    }
+
+
+@traceable(run_type="chain", name="analyze", process_outputs=_trace_summary)
 def analyze_text(
     *,
     brand: str | None,
@@ -122,7 +135,7 @@ def analyze_text(
     carcinogen_count = sum(1 for m in matches if m.ingredient.carcinogen)
 
     category = product.category if product else None
-    recommendations = recommend(category, matches) if rating != "clean" else []
+    recommendations = recommend(category) if rating != "clean" else []
 
     # FAISS RAG: pull supporting regulatory context for the flagged items.
     rag_context = rag.context_for([m.ingredient.name for m in matches])

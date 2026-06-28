@@ -6,6 +6,7 @@ import re
 from dataclasses import dataclass
 
 from .knowledge_base import Ingredient, get_knowledge_base
+from .observability import traceable
 
 
 @dataclass
@@ -21,6 +22,11 @@ def _normalise(text: str) -> str:
     return text
 
 
+@traceable(
+    run_type="tool",
+    name="match_harmful_ingredients",
+    process_outputs=lambda matches: {"matched": [m.ingredient.name for m in matches]},
+)
 def match_harmful(text: str) -> list[Match]:
     """Return harmful-ingredient matches found in the supplied text."""
     kb = get_knowledge_base()

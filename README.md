@@ -27,6 +27,10 @@ The agent first queries the **FAISS RAG** layer for regulatory context, then per
 OpenAI LLM produces a richer consumer narrative; without a key the service falls back to
 a fully deterministic rule-based engine so it works offline.
 
+See [`docs/agent-workflow.md`](docs/agent-workflow.md) for the full workflow diagram, and
+[`docs/observability.md`](docs/observability.md) to enable **LangSmith** tracing (works on
+the free, no-LLM tier too).
+
 ## Core capabilities
 
 1. **Analyse by brand or ingredient text** — e.g. `Maggi Masala`, or pasted label text.
