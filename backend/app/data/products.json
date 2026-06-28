@@ -1,0 +1,135 @@
+{
+  "disclaimer": "Product and ingredient data below is illustrative, compiled from publicly available label information for demonstration purposes. It may not reflect the latest reformulations. SafeBasket provides educational information based on public regulatory databases and does not assert any product is unsafe; all listed additives may be used within FSSAI permissible limits.",
+  "products": [
+    {
+      "id": "maggi-masala",
+      "name": "Maggi 2-Minute Masala Noodles",
+      "brand": "Maggi",
+      "category": "instant_noodles",
+      "ingredients": ["refined wheat flour (maida)", "palm oil", "salt", "wheat gluten", "monosodium glutamate (E621)", "tertiary butylhydroquinone (E319)", "flavour enhancers (E627, E631)", "acidity regulators"],
+      "aliases": ["maggi", "maggi noodles", "maggi masala", "2 minute noodles"]
+    },
+    {
+      "id": "yippee-noodles",
+      "name": "Sunfeast YiPPee! Magic Masala",
+      "brand": "Sunfeast",
+      "category": "instant_noodles",
+      "ingredients": ["refined wheat flour (maida)", "edible vegetable oil (palm)", "salt", "monosodium glutamate (E621)", "spices", "acidity regulators"],
+      "aliases": ["yippee", "yippee noodles", "sunfeast yippee"]
+    },
+    {
+      "id": "lays-classic",
+      "name": "Lay's Classic Salted Potato Chips",
+      "brand": "Lay's",
+      "category": "chips",
+      "ingredients": ["potato", "edible vegetable oil (palm olein)", "salt", "antioxidant (E319)"],
+      "aliases": ["lays", "lay's", "lays chips", "lays classic"]
+    },
+    {
+      "id": "kurkure-masala",
+      "name": "Kurkure Masala Munch",
+      "brand": "Kurkure",
+      "category": "namkeen",
+      "ingredients": ["rice meal", "edible vegetable oil (palm)", "corn meal", "gram meal", "spices", "salt", "monosodium glutamate (E621)", "tartrazine (E102)", "sunset yellow (E110)"],
+      "aliases": ["kurkure", "kurkure masala", "masala munch"]
+    },
+    {
+      "id": "bourbon-biscuit",
+      "name": "Britannia Bourbon Chocolate Biscuits",
+      "brand": "Britannia",
+      "category": "biscuits",
+      "ingredients": ["refined wheat flour (maida)", "sugar", "edible vegetable oil (palm)", "cocoa solids", "invert syrup", "raising agents", "salt", "emulsifiers", "added flavours"],
+      "aliases": ["bourbon", "bourbon biscuit", "britannia bourbon"]
+    },
+    {
+      "id": "frooti",
+      "name": "Frooti Mango Drink",
+      "brand": "Frooti",
+      "category": "beverages",
+      "ingredients": ["water", "mango pulp", "sugar", "high fructose corn syrup", "acidity regulator (E330)", "preservative (E211 sodium benzoate)", "added flavours"],
+      "aliases": ["frooti", "mango frooti"]
+    },
+    {
+      "id": "thums-up",
+      "name": "Thums Up Cola",
+      "brand": "Thums Up",
+      "category": "beverages",
+      "ingredients": ["carbonated water", "sugar", "acidity regulator (E338)", "caramel colour (E150d)", "caffeine", "added flavours"],
+      "aliases": ["thums up", "thumsup", "cola"]
+    },
+    {
+      "id": "real-mixed-fruit",
+      "name": "Real Activ Mixed Fruit Juice (No Added Sugar)",
+      "brand": "Real",
+      "category": "beverages",
+      "ingredients": ["water", "fruit juice concentrates (mixed fruit)", "acidity regulator (E330)", "natural flavours"],
+      "aliases": ["real activ", "real juice", "real mixed fruit"]
+    },
+    {
+      "id": "amul-taaza",
+      "name": "Amul Taaza Toned Milk",
+      "brand": "Amul",
+      "category": "dairy",
+      "ingredients": ["toned milk"],
+      "aliases": ["amul taaza", "amul milk", "toned milk"]
+    },
+    {
+      "id": "harvest-multigrain-bread",
+      "name": "Harvest Gold Multigrain Bread",
+      "brand": "Harvest Gold",
+      "category": "bread",
+      "ingredients": ["whole wheat flour (atta)", "multigrain mix", "water", "yeast", "salt", "edible vegetable oil", "preservative (E282)"],
+      "aliases": ["harvest gold", "multigrain bread"]
+    },
+    {
+      "id": "white-bread-generic",
+      "name": "Classic White Sandwich Bread",
+      "brand": "Generic",
+      "category": "bread",
+      "ingredients": ["refined wheat flour (maida)", "water", "yeast", "sugar", "salt", "edible vegetable oil", "potassium bromate (E924)", "preservative (E282)"],
+      "aliases": ["white bread", "sandwich bread"]
+    },
+    {
+      "id": "tropicana-no-sugar",
+      "name": "Tropicana Orange (No Added Sugar)",
+      "brand": "Tropicana",
+      "category": "beverages",
+      "ingredients": ["water", "orange juice concentrate", "natural flavours", "acidity regulator (E330)"],
+      "aliases": ["tropicana", "tropicana orange"]
+    },
+    {
+      "id": "too-yumm-baked",
+      "name": "Too Yumm! Multigrain Chips (Baked)",
+      "brand": "Too Yumm",
+      "category": "chips",
+      "ingredients": ["multigrain flour", "rice bran oil", "salt", "spices"],
+      "aliases": ["too yumm", "too yumm chips", "multigrain chips"]
+    },
+    {
+      "id": "marie-light",
+      "name": "Britannia Marie Gold (Light)",
+      "brand": "Britannia",
+      "category": "biscuits",
+      "ingredients": ["wheat flour", "sugar", "edible vegetable oil", "invert syrup", "milk solids", "raising agents", "salt"],
+      "aliases": ["marie", "marie gold", "marie light"]
+    }
+  ],
+  "alternatives": {
+    "instant_noodles": ["too-yumm-baked"],
+    "chips": ["too-yumm-baked"],
+    "namkeen": ["too-yumm-baked"],
+    "biscuits": ["marie-light"],
+    "beverages": ["real-mixed-fruit", "tropicana-no-sugar"],
+    "bread": ["harvest-multigrain-bread"],
+    "dairy": ["amul-taaza"]
+  },
+  "alternative_advice": {
+    "instant_noodles": "Choose baked or millet/multigrain noodles without added MSG and TBHQ, and use the seasoning sparingly.",
+    "chips": "Prefer baked multigrain chips in rice-bran or sunflower oil instead of palm-fried chips with synthetic colours.",
+    "namkeen": "Prefer roasted or baked snacks without synthetic colours (tartrazine, sunset yellow) and MSG.",
+    "biscuits": "Prefer whole-grain, lower-sugar biscuits without palm oil and added flavours.",
+    "beverages": "Prefer no-added-sugar juices or plain water/nimbu pani over colas and sugary drinks with caramel colour and HFCS.",
+    "bread": "Choose bromate-free multigrain or whole-wheat bread over refined-flour white bread.",
+    "dairy": "Plain toned/standardised milk is a good baseline; avoid flavoured milks with added sugar and colours."
+  }
+}
