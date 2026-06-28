@@ -1,0 +1,457 @@
+[
+  {
+    "name": "Potassium bromate",
+    "code": "E924",
+    "aliases": ["potassium bromate", "bromate", "e924", "ins 924"],
+    "category": "Flour treatment agent",
+    "severity": "high",
+    "carcinogen": true,
+    "concern": "Possibly carcinogenic to humans (IARC Group 2B). Linked to kidney and thyroid tumours in animal studies.",
+    "regulatory": {
+      "FSSAI": "Banned as a food additive in India (removed from the list of permitted additives in 2016).",
+      "IARC": "Group 2B - possibly carcinogenic to humans.",
+      "FDA_CFSAN": "Permitted in the USA with limits; listed under California Proposition 65.",
+      "EFSA": "Not permitted for use in the European Union."
+    },
+    "found_in": ["bread", "buns", "bakery products", "atta", "pizza base"],
+    "advice": "Choose breads and bakery items labelled 'bromate-free'.",
+    "sources": ["IARC Monographs Vol. 73", "FSSAI Gazette Notification (2016)"]
+  },
+  {
+    "name": "Potassium iodate",
+    "code": "E917",
+    "aliases": ["potassium iodate", "e917", "ins 917"],
+    "category": "Flour treatment agent",
+    "severity": "medium",
+    "carcinogen": false,
+    "concern": "Often used alongside bromate as a dough conditioner; excess intake raises iodine-overload concerns.",
+    "regulatory": {
+      "FSSAI": "Banned as a food additive in India (2016), alongside potassium bromate.",
+      "EFSA": "Not permitted in the European Union."
+    },
+    "found_in": ["bread", "bakery products"],
+    "advice": "Prefer bakery items without added dough conditioners.",
+    "sources": ["FSSAI Gazette Notification (2016)"]
+  },
+  {
+    "name": "Sodium nitrite",
+    "code": "E250",
+    "aliases": ["sodium nitrite", "e250", "ins 250", "nitrite"],
+    "category": "Preservative / colour fixative",
+    "severity": "high",
+    "carcinogen": true,
+    "concern": "In processed meats it can form nitrosamines, which are carcinogenic. Processed meat is IARC Group 1.",
+    "regulatory": {
+      "IARC": "Processed meat (preserved with nitrites) classified Group 1 - carcinogenic to humans.",
+      "FSSAI": "Permitted only in specified cured/processed meat products within strict limits.",
+      "FDA_CFSAN": "Permitted with limits in cured meats."
+    },
+    "found_in": ["sausages", "salami", "ham", "bacon", "cured meat", "processed meat"],
+    "advice": "Limit processed/cured meats; prefer fresh meat.",
+    "sources": ["IARC Monographs Vol. 114"]
+  },
+  {
+    "name": "Sodium nitrate",
+    "code": "E251",
+    "aliases": ["sodium nitrate", "e251", "ins 251", "nitrate"],
+    "category": "Preservative",
+    "severity": "medium",
+    "carcinogen": true,
+    "concern": "Can convert to nitrite and form nitrosamines in cured meats (IARC Group 1 processed meat).",
+    "regulatory": {
+      "IARC": "Associated with processed meat (Group 1).",
+      "FSSAI": "Permitted only in specified products within limits."
+    },
+    "found_in": ["cured meat", "processed meat"],
+    "advice": "Limit cured/processed meats.",
+    "sources": ["IARC Monographs Vol. 114"]
+  },
+  {
+    "name": "Butylated hydroxyanisole",
+    "code": "E320",
+    "aliases": ["butylated hydroxyanisole", "bha", "e320", "ins 320"],
+    "category": "Antioxidant",
+    "severity": "high",
+    "carcinogen": true,
+    "concern": "Possibly carcinogenic to humans (IARC Group 2B).",
+    "regulatory": {
+      "IARC": "Group 2B - possibly carcinogenic to humans.",
+      "FSSAI": "Permitted as an antioxidant within prescribed limits.",
+      "FDA_CFSAN": "Generally Recognised As Safe (GRAS) within limits; listed under California Prop 65."
+    },
+    "found_in": ["chips", "instant noodles", "snacks", "fried foods", "fats and oils"],
+    "advice": "Prefer snacks using natural antioxidants such as tocopherols (vitamin E).",
+    "sources": ["IARC Monographs Vol. 40"]
+  },
+  {
+    "name": "Butylated hydroxytoluene",
+    "code": "E321",
+    "aliases": ["butylated hydroxytoluene", "bht", "e321", "ins 321"],
+    "category": "Antioxidant",
+    "severity": "medium",
+    "carcinogen": false,
+    "concern": "Animal studies show tumour-promoting effects at high doses; classified IARC Group 3 (insufficient evidence).",
+    "regulatory": {
+      "IARC": "Group 3 - not classifiable.",
+      "FSSAI": "Permitted within prescribed limits."
+    },
+    "found_in": ["chips", "snacks", "cereals", "fats and oils"],
+    "advice": "Prefer products with natural antioxidants.",
+    "sources": ["IARC Monographs Vol. 40"]
+  },
+  {
+    "name": "Tertiary butylhydroquinone",
+    "code": "E319",
+    "aliases": ["tertiary butylhydroquinone", "tbhq", "e319", "ins 319"],
+    "category": "Antioxidant",
+    "severity": "medium",
+    "carcinogen": false,
+    "concern": "High intake linked to adverse effects in animal studies; commonly used to extend shelf-life of fried snacks.",
+    "regulatory": {
+      "FSSAI": "Permitted within prescribed limits.",
+      "FDA_CFSAN": "Permitted with an upper limit (0.02% of oil/fat content)."
+    },
+    "found_in": ["instant noodles", "chips", "biscuits", "fried snacks"],
+    "advice": "Limit ultra-processed fried snacks.",
+    "sources": ["JECFA evaluations"]
+  },
+  {
+    "name": "Tartrazine",
+    "code": "E102",
+    "aliases": ["tartrazine", "e102", "ins 102", "yellow 5", "fd&c yellow 5"],
+    "category": "Synthetic colour",
+    "severity": "medium",
+    "carcinogen": false,
+    "concern": "Linked to hyperactivity in children and allergic reactions in sensitive individuals.",
+    "regulatory": {
+      "EFSA": "Requires the warning 'may have an adverse effect on activity and attention in children' (Southampton colours).",
+      "FSSAI": "Permitted within prescribed limits."
+    },
+    "found_in": ["soft drinks", "candies", "ice cream", "instant mixes", "pickles", "snacks"],
+    "advice": "Prefer products coloured with natural sources (turmeric, beetroot, annatto).",
+    "sources": ["EFSA opinion on Southampton colours (2009)"]
+  },
+  {
+    "name": "Sunset Yellow FCF",
+    "code": "E110",
+    "aliases": ["sunset yellow", "sunset yellow fcf", "e110", "ins 110", "yellow 6"],
+    "category": "Synthetic colour",
+    "severity": "medium",
+    "carcinogen": false,
+    "concern": "Southampton colour linked to hyperactivity in children; possible allergic reactions.",
+    "regulatory": {
+      "EFSA": "Southampton colour - warning label required in the EU.",
+      "FSSAI": "Permitted within prescribed limits."
+    },
+    "found_in": ["soft drinks", "candies", "snacks", "instant mixes"],
+    "advice": "Prefer naturally coloured products.",
+    "sources": ["EFSA opinion on Southampton colours (2009)"]
+  },
+  {
+    "name": "Carmoisine",
+    "code": "E122",
+    "aliases": ["carmoisine", "azorubine", "e122", "ins 122"],
+    "category": "Synthetic colour",
+    "severity": "medium",
+    "carcinogen": false,
+    "concern": "Southampton colour associated with hyperactivity in children.",
+    "regulatory": {
+      "EFSA": "Southampton colour - warning label required in the EU.",
+      "FSSAI": "Permitted within prescribed limits."
+    },
+    "found_in": ["sweets", "jellies", "beverages", "ketchup"],
+    "advice": "Prefer naturally coloured products.",
+    "sources": ["EFSA opinion on Southampton colours (2009)"]
+  },
+  {
+    "name": "Ponceau 4R",
+    "code": "E124",
+    "aliases": ["ponceau 4r", "ponceau", "e124", "ins 124"],
+    "category": "Synthetic colour",
+    "severity": "medium",
+    "carcinogen": false,
+    "concern": "Southampton colour linked to hyperactivity in children; banned in some countries.",
+    "regulatory": {
+      "EFSA": "Southampton colour - warning label required in the EU.",
+      "FDA_CFSAN": "Not permitted for food use in the USA.",
+      "FSSAI": "Permitted within prescribed limits."
+    },
+    "found_in": ["sweets", "beverages", "tinned fruit", "desserts"],
+    "advice": "Prefer naturally coloured products.",
+    "sources": ["EFSA opinion on Southampton colours (2009)"]
+  },
+  {
+    "name": "Allura Red AC",
+    "code": "E129",
+    "aliases": ["allura red", "allura red ac", "e129", "ins 129", "red 40", "fd&c red 40"],
+    "category": "Synthetic colour",
+    "severity": "medium",
+    "carcinogen": false,
+    "concern": "Southampton colour linked to hyperactivity in children; emerging research on gut inflammation.",
+    "regulatory": {
+      "EFSA": "Southampton colour - warning label required in the EU.",
+      "FSSAI": "Permitted within prescribed limits."
+    },
+    "found_in": ["candies", "soft drinks", "snacks", "cereals"],
+    "advice": "Prefer naturally coloured products.",
+    "sources": ["EFSA opinion on Southampton colours (2009)"]
+  },
+  {
+    "name": "Monosodium glutamate",
+    "code": "E621",
+    "aliases": ["monosodium glutamate", "msg", "e621", "ins 621", "ajinomoto", "flavour enhancer 621"],
+    "category": "Flavour enhancer",
+    "severity": "low",
+    "carcinogen": false,
+    "concern": "Generally considered safe by regulators, but can trigger headaches/flushing in sensitive individuals and encourages overconsumption of salty snacks.",
+    "regulatory": {
+      "FSSAI": "Permitted; not allowed in foods for infants below 12 months; label must declare 'Contains added MSG'.",
+      "FDA_CFSAN": "Generally Recognised As Safe (GRAS)."
+    },
+    "found_in": ["instant noodles", "chips", "soups", "seasonings", "snacks"],
+    "advice": "Limit if sensitive; prefer snacks without added flavour enhancers.",
+    "sources": ["FSSAI Food Safety and Standards Regulations"]
+  },
+  {
+    "name": "Aspartame",
+    "code": "E951",
+    "aliases": ["aspartame", "e951", "ins 951"],
+    "category": "Artificial sweetener",
+    "severity": "medium",
+    "carcinogen": true,
+    "concern": "Classified by IARC as Group 2B (possibly carcinogenic to humans) in 2023; not for people with phenylketonuria (PKU).",
+    "regulatory": {
+      "IARC": "Group 2B - possibly carcinogenic to humans (2023).",
+      "JECFA": "Acceptable Daily Intake retained at 40 mg/kg body weight.",
+      "FSSAI": "Permitted within prescribed limits; PKU warning required."
+    },
+    "found_in": ["diet soft drinks", "sugar-free gum", "tabletop sweeteners", "sugar-free desserts"],
+    "advice": "Moderate intake; people with PKU must avoid.",
+    "sources": ["IARC/WHO press release (July 2023)"]
+  },
+  {
+    "name": "Acesulfame potassium",
+    "code": "E950",
+    "aliases": ["acesulfame potassium", "acesulfame k", "ace-k", "e950", "ins 950"],
+    "category": "Artificial sweetener",
+    "severity": "low",
+    "carcinogen": false,
+    "concern": "Often combined with aspartame; long-term high-dose effects debated.",
+    "regulatory": {
+      "FSSAI": "Permitted within prescribed limits.",
+      "EFSA": "Permitted; ADI established."
+    },
+    "found_in": ["diet beverages", "sugar-free products"],
+    "advice": "Moderate intake of artificially sweetened products.",
+    "sources": ["EFSA evaluations"]
+  },
+  {
+    "name": "Saccharin",
+    "code": "E954",
+    "aliases": ["saccharin", "sodium saccharin", "e954", "ins 954"],
+    "category": "Artificial sweetener",
+    "severity": "low",
+    "carcinogen": false,
+    "concern": "Historically linked to bladder tumours in rats; later delisted as a human carcinogen (IARC Group 3).",
+    "regulatory": {
+      "IARC": "Group 3 - not classifiable as to carcinogenicity to humans.",
+      "FSSAI": "Permitted within prescribed limits."
+    },
+    "found_in": ["tabletop sweeteners", "sugar-free sweets"],
+    "advice": "Moderate intake.",
+    "sources": ["IARC Monographs Vol. 73"]
+  },
+  {
+    "name": "Sodium benzoate",
+    "code": "E211",
+    "aliases": ["sodium benzoate", "e211", "ins 211"],
+    "category": "Preservative",
+    "severity": "medium",
+    "carcinogen": false,
+    "concern": "Can react with ascorbic acid (vitamin C) to form benzene, a known carcinogen, especially in acidic drinks.",
+    "regulatory": {
+      "FSSAI": "Permitted within prescribed limits.",
+      "FDA_CFSAN": "Permitted; benzene formation monitored in soft drinks."
+    },
+    "found_in": ["soft drinks", "fruit juices", "pickles", "sauces", "jams"],
+    "advice": "Be cautious with acidic drinks that also list vitamin C.",
+    "sources": ["FDA data on benzene in beverages"]
+  },
+  {
+    "name": "Potassium sorbate",
+    "code": "E202",
+    "aliases": ["potassium sorbate", "e202", "ins 202"],
+    "category": "Preservative",
+    "severity": "low",
+    "carcinogen": false,
+    "concern": "Generally regarded as one of the safer preservatives; rare skin/allergic reactions.",
+    "regulatory": {
+      "FSSAI": "Permitted within prescribed limits.",
+      "EFSA": "Permitted; ADI established."
+    },
+    "found_in": ["cheese", "baked goods", "beverages", "dried fruit"],
+    "advice": "Low concern at typical levels.",
+    "sources": ["EFSA evaluations"]
+  },
+  {
+    "name": "Titanium dioxide",
+    "code": "E171",
+    "aliases": ["titanium dioxide", "e171", "ins 171"],
+    "category": "Colour (whitening)",
+    "severity": "high",
+    "carcinogen": false,
+    "concern": "EFSA concluded in 2021 it can no longer be considered safe as a food additive due to possible genotoxicity; banned in the EU from 2022.",
+    "regulatory": {
+      "EFSA": "No longer considered safe as a food additive (2021).",
+      "EU": "Banned as a food additive from 2022.",
+      "FSSAI": "Permitted within prescribed limits in certain foods."
+    },
+    "found_in": ["chewing gum", "candies", "white-coated sweets", "icing", "supplements"],
+    "advice": "Prefer confectionery without added whitening colour.",
+    "sources": ["EFSA opinion on titanium dioxide (2021)"]
+  },
+  {
+    "name": "Caramel colour Class IV",
+    "code": "E150d",
+    "aliases": ["caramel colour", "caramel color", "caramel iv", "e150d", "ins 150d", "ammonia sulphite caramel"],
+    "category": "Colour",
+    "severity": "medium",
+    "carcinogen": true,
+    "concern": "May contain 4-methylimidazole (4-MEI), classified IARC Group 2B (possibly carcinogenic).",
+    "regulatory": {
+      "IARC": "4-MEI classified Group 2B.",
+      "FSSAI": "Permitted within prescribed limits.",
+      "FDA_CFSAN": "Permitted; California Prop 65 limits 4-MEI exposure."
+    },
+    "found_in": ["colas", "dark soft drinks", "sauces", "soy sauce", "dark baked goods"],
+    "advice": "Limit dark colas and heavily coloured sauces.",
+    "sources": ["IARC Monographs Vol. 101"]
+  },
+  {
+    "name": "Carrageenan",
+    "code": "E407",
+    "aliases": ["carrageenan", "e407", "ins 407"],
+    "category": "Thickener / stabiliser",
+    "severity": "low",
+    "carcinogen": false,
+    "concern": "Degraded carrageenan (poligeenan) is a concern, but food-grade carrageenan is permitted; some studies suggest gut inflammation.",
+    "regulatory": {
+      "FSSAI": "Permitted within prescribed limits.",
+      "EFSA": "Permitted; ADI established."
+    },
+    "found_in": ["ice cream", "flavoured milk", "plant-based milk", "jellies"],
+    "advice": "Low concern at typical levels.",
+    "sources": ["EFSA re-evaluation of carrageenan (2018)"]
+  },
+  {
+    "name": "Sulphur dioxide",
+    "code": "E220",
+    "aliases": ["sulphur dioxide", "sulfur dioxide", "e220", "ins 220", "sulphites", "sulfites"],
+    "category": "Preservative",
+    "severity": "medium",
+    "carcinogen": false,
+    "concern": "Can trigger severe reactions in asthmatics and sulphite-sensitive individuals.",
+    "regulatory": {
+      "FSSAI": "Permitted within prescribed limits; declaration required.",
+      "FDA_CFSAN": "Permitted; mandatory labelling above 10 ppm."
+    },
+    "found_in": ["dried fruit", "wine", "fruit squash", "pickles", "processed potato"],
+    "advice": "Sulphite-sensitive individuals should avoid.",
+    "sources": ["FDA sulphite labelling rules"]
+  },
+  {
+    "name": "Sodium metabisulphite",
+    "code": "E223",
+    "aliases": ["sodium metabisulphite", "sodium metabisulfite", "e223", "ins 223"],
+    "category": "Preservative / antioxidant",
+    "severity": "medium",
+    "carcinogen": false,
+    "concern": "Releases sulphur dioxide; can trigger asthma and allergic reactions.",
+    "regulatory": {
+      "FSSAI": "Permitted within prescribed limits.",
+      "EFSA": "Permitted; ADI established."
+    },
+    "found_in": ["dried fruit", "pickles", "fruit pulp", "shrimp"],
+    "advice": "Sulphite-sensitive individuals should avoid.",
+    "sources": ["EFSA evaluations of sulphites"]
+  },
+  {
+    "name": "Partially hydrogenated vegetable oil",
+    "code": "TFA",
+    "aliases": ["partially hydrogenated", "hydrogenated vegetable oil", "vanaspati", "trans fat", "trans fatty acids", "partially hydrogenated vegetable oil"],
+    "category": "Fat (industrial trans fat)",
+    "severity": "high",
+    "carcinogen": false,
+    "concern": "Industrial trans fats strongly raise cardiovascular disease risk; the WHO recommends elimination from the food supply.",
+    "regulatory": {
+      "WHO": "Recommends elimination of industrial trans fats.",
+      "FSSAI": "Industrial trans fat in oils and fats capped at 2% (since 2022)."
+    },
+    "found_in": ["vanaspati", "bakery", "fried snacks", "margarine", "cream biscuits"],
+    "advice": "Avoid products listing 'partially hydrogenated' or 'vanaspati'.",
+    "sources": ["WHO REPLACE", "FSSAI trans fat regulations (2021)"]
+  },
+  {
+    "name": "Palm oil",
+    "code": "PALM",
+    "aliases": ["palm oil", "palmolein", "palm olein", "rbd palmolein"],
+    "category": "Fat",
+    "severity": "low",
+    "carcinogen": false,
+    "concern": "High in saturated fat; refining at high temperatures can form process contaminants (3-MCPD, glycidyl esters).",
+    "regulatory": {
+      "EFSA": "Flagged glycidyl esters (process contaminants) as a concern.",
+      "FSSAI": "Permitted edible oil."
+    },
+    "found_in": ["instant noodles", "biscuits", "chocolate spread", "snacks", "bakery"],
+    "advice": "Prefer products using unrefined or healthier oils where possible.",
+    "sources": ["EFSA opinion on process contaminants in palm oil (2016)"]
+  },
+  {
+    "name": "High fructose corn syrup",
+    "code": "HFCS",
+    "aliases": ["high fructose corn syrup", "hfcs", "fructose syrup", "corn syrup", "liquid glucose-fructose"],
+    "category": "Sweetener",
+    "severity": "medium",
+    "carcinogen": false,
+    "concern": "Excess intake associated with obesity, fatty liver and metabolic syndrome.",
+    "regulatory": {
+      "FSSAI": "Permitted; added sugars discouraged by dietary guidelines.",
+      "WHO": "Recommends reducing free sugar intake."
+    },
+    "found_in": ["soft drinks", "sauces", "jams", "packaged sweets", "energy drinks"],
+    "advice": "Limit added-sugar beverages and sauces.",
+    "sources": ["WHO sugar intake guideline (2015)"]
+  },
+  {
+    "name": "Acrylamide",
+    "code": "ACR",
+    "aliases": ["acrylamide"],
+    "category": "Process contaminant",
+    "severity": "high",
+    "carcinogen": true,
+    "concern": "Forms in starchy foods cooked at high temperatures; classified IARC Group 2A (probably carcinogenic to humans).",
+    "regulatory": {
+      "IARC": "Group 2A - probably carcinogenic to humans.",
+      "EFSA": "Confirmed as a public-health concern; benchmark levels set."
+    },
+    "found_in": ["potato chips", "fried snacks", "biscuits", "roasted coffee", "fries"],
+    "advice": "Limit deep-fried and over-browned starchy snacks.",
+    "sources": ["IARC Monographs Vol. 60", "EFSA opinion on acrylamide (2015)"]
+  },
+  {
+    "name": "Maida",
+    "code": "MAIDA",
+    "aliases": ["maida", "refined wheat flour", "refined flour"],
+    "category": "Refined grain",
+    "severity": "low",
+    "carcinogen": false,
+    "concern": "Refined flour is stripped of fibre and nutrients; high-glycaemic and linked to metabolic issues when consumed in excess.",
+    "regulatory": {
+      "FSSAI": "Permitted food ingredient."
+    },
+    "found_in": ["bread", "biscuits", "noodles", "namkeen", "bakery"],
+    "advice": "Prefer whole-grain (atta / multigrain) alternatives.",
+    "sources": ["Dietary guidelines for Indians (ICMR-NIN)"]
+  }
+]

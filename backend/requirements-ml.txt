@@ -1,0 +1,7 @@
+# SafeBasket backend - OPTIONAL high-quality embeddings.
+# Installing these upgrades the FAISS RAG layer from the deterministic hashing
+# fallback to a real sentence-transformers model. This pulls in torch and is a
+# large download, so it is kept separate from the core requirements.
+
+langchain-huggingface>=0.0.3
+sentence-transformers>=2.7.0
