@@ -1,6 +1,9 @@
 // Thin API client. The website always reaches the agent through the API,
 // matching the product's two-mode design (website + commercial API).
-const BASE = import.meta.env.VITE_API_BASE || ''
+// In production (e.g. Lovable), point this at the deployed backend URL via the
+// VITE_API_BASE_URL secret. Empty string falls back to same-origin / dev proxy.
+const BASE =
+  import.meta.env.VITE_API_BASE_URL || import.meta.env.VITE_API_BASE || ''
 
 async function handle(res) {
   if (!res.ok) {

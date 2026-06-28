@@ -1,0 +1,27 @@
+# Render Blueprint for the SafeBasket Python API.
+# Deploy: push this repo to GitHub, then in Render: New + → Blueprint → pick repo.
+# After it goes live, copy the service URL into Lovable as VITE_API_BASE_URL.
+services:
+  - type: web
+    name: safebasket-api
+    runtime: docker
+    dockerfilePath: ./backend/Dockerfile
+    dockerContext: ./backend
+    plan: starter
+    healthCheckPath: /health
+    autoDeploy: true
+    envVars:
+      # Lock CORS to the production domains (comma-separated). Update as needed.
+      - key: SAFEBASKET_CORS_ORIGINS
+        value: https://safebasket.co.in,https://www.safebasket.co.in,https://safebaskets.com,https://www.safebaskets.com
+      # Optional integrations - set in the Render dashboard if/when you have keys.
+      - key: OPENAI_API_KEY
+        sync: false
+      - key: TAVILY_API_KEY
+        sync: false
+      - key: SAFEBASKET_ENABLE_WEB_SEARCH
+        sync: false
+      - key: LANGCHAIN_API_KEY
+        sync: false
+      - key: SAFEBASKET_API_KEYS
+        sync: false
