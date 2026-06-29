@@ -5,10 +5,11 @@ __pycache__/
 backend/.venv/
 .pytest_cache/
 
-# Node
+# Node (root-level Vite app for Lovable compatibility)
 node_modules/
-frontend/dist/
-frontend/.vite/
+dist/
+dist-ssr/
+.vite/
 
 # Env
 .env

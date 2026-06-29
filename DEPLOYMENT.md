@@ -42,11 +42,15 @@ dashboard — the API runs fine without them.
 
 ## Step 2 — Put the frontend on Lovable
 
-1. In Lovable, open (or recreate) the SafeBasket project. The cleanest path is **GitHub sync**:
-   connect this repo so Lovable tracks `frontend/`.
+Lovable can't import an existing repo and isn't monorepo-compatible, so use the
+**`cursor/lovable-deploy-ac6e`** branch (root-level Vite app) and follow the export
+workaround in [`LOVABLE.md`](LOVABLE.md). In short:
+
+1. Let Lovable create a repo (Project → Settings → Git), then push this branch's root-level
+   app into it.
 2. Add a secret **`VITE_API_BASE_URL`** = your Step 1 API URL (e.g.
    `https://safebasket-api.onrender.com` or `https://api.safebasket.co.in`).
-   The frontend reads this (see `frontend/src/api.js`).
+   The frontend reads this (see `src/api.js`).
 3. **Publish** the project (you get a `xxx.lovable.app` URL first).
 
 ## Step 3 — Connect the custom domains
