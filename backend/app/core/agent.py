@@ -15,6 +15,7 @@ from functools import lru_cache
 
 from ..config import get_settings
 from .analyzer import analyze_text
+from .observability import traceable
 from .rag import get_rag_index
 
 
@@ -75,6 +76,16 @@ def _narrative_via_llm(result: dict) -> str | None:
         return None
 
 
+@traceable(
+    run_type="chain",
+    name="safebasket_agent",
+    process_outputs=lambda r: {
+        "rating": r.get("rating"),
+        "safety_score": r.get("safety_score"),
+        "engine": r.get("engine"),
+        "carcinogen_count": r.get("carcinogen_count"),
+    },
+)
 def run_agent(*, brand=None, ingredients_text=None, deep_research=False) -> dict:
     settings = get_settings()
     settings.configure_langsmith()

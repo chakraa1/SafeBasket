@@ -28,6 +28,10 @@ Non-obvious notes:
 - **Optional integrations** (LLM, Tavily web search, LangSmith) activate only when their
   env vars are set; see `backend/.env.example`. Web research is off unless
   `SAFEBASKET_ENABLE_WEB_SEARCH=true` AND `TAVILY_API_KEY` are present.
+- **LangSmith observability** is wired via `@traceable` in `backend/app/core/` and covers
+  the free, no-LLM tier (not just LLM calls). It is a no-op until `LANGSMITH_API_KEY`
+  (or `LANGCHAIN_API_KEY`) is set; `/health` shows `langsmith_enabled`. The trace tree and
+  setup are documented in `docs/observability.md` and `docs/agent-workflow.md`.
 - **The website talks to the agent only through the API.** Vite proxies `/api` and
   `/health` to `http://localhost:8000`, so start the backend before the frontend.
 - **High-quality embeddings are optional** and live in `backend/requirements-ml.txt`

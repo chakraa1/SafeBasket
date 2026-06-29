@@ -16,6 +16,7 @@ from langchain_core.documents import Document
 from ..config import get_settings
 from .embeddings import build_embeddings
 from .knowledge_base import get_knowledge_base
+from .observability import traceable
 
 
 class RagIndex:
@@ -39,6 +40,14 @@ class RagIndex:
         results = self.store.similarity_search_with_score(query, k=k)
         return [(doc.page_content, float(score)) for doc, score in results]
 
+    @traceable(
+        run_type="retriever",
+        name="faiss_rag_retrieve",
+        process_inputs=lambda inputs: {
+            "names": inputs.get("names"),
+            "k": inputs.get("k"),
+        },
+    )
     def context_for(self, names: List[str], k: int = 3) -> List[str]:
         """Retrieve supporting regulatory context for a set of ingredient names."""
         if not names:
