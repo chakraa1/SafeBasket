@@ -125,8 +125,11 @@ API docs at <http://localhost:8000/docs>. All config is optional — see `backen
 
 ### Frontend (port 5173)
 
+> On this **`lovable-deploy`** branch the Vite React app lives at the **repo root**
+> (Lovable requires a root-level, non-monorepo Vite app). The Python API stays in
+> `backend/` and is deployed separately; the frontend calls it via `VITE_API_BASE_URL`.
+
 ```bash
-cd frontend
 npm install
 npm run dev    # proxies /api and /health to the backend on :8000
 ```
@@ -134,9 +137,14 @@ npm run dev    # proxies /api and /health to the backend on :8000
 ### Tests / lint
 
 ```bash
-cd backend  && . .venv/bin/activate && pytest        # backend tests
-cd frontend && npm run lint && npm run build         # frontend lint + build
+cd backend && . .venv/bin/activate && pytest          # backend tests
+npm run lint && npm run build                          # frontend lint + build (repo root)
 ```
+
+## Deploy to Lovable
+
+This branch is structured for Lovable (root-level Vite app). See [`LOVABLE.md`](LOVABLE.md)
+for the step-by-step export workaround, publishing, and custom-domain setup.
 
 ## Compliance note
 

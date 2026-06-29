@@ -1,7 +1,8 @@
 # SafeBasket
 
 Food-safety agent for Indian consumers. Two products share one Python agent:
-a free **React website** (`frontend/`) and a commercial **FastAPI API** (`backend/`).
+a free **React website** (at the repo root on this `lovable-deploy` branch) and a
+commercial **FastAPI API** (`backend/`).
 See `README.md` for architecture and standard commands.
 
 ## Cursor Cloud specific instructions
@@ -11,7 +12,7 @@ Services (run each in its own terminal; do not background blindly):
 | Service  | Dir         | Dev command                                            | Port |
 |----------|-------------|--------------------------------------------------------|------|
 | API      | `backend/`  | `. .venv/bin/activate && uvicorn app.main:app --reload --port 8000` | 8000 |
-| Website  | `frontend/` | `npm run dev`                                          | 5173 |
+| Website  | repo root   | `npm run dev`                                          | 5173 |
 
 Non-obvious notes:
 
